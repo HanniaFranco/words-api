@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
             WordSeeder::class,
         ]);
 
-        User::factory()->create([
+        /* User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
-        ]);
+        ]); */
     }
 }

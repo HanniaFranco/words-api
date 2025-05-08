@@ -9,7 +9,7 @@ use App\Models\Category;
 class CategorySeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Categorías de las palabras
      */
     public function run(): void
     {
