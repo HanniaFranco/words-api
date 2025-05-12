@@ -6,6 +6,8 @@ use App\Http\Controllers\ApiController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserCategoryController;
 use App\Http\Controllers\DailyWordController;
+use App\Http\Controllers\WordSearchController;
+
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -25,4 +27,5 @@ Route::group([
     Route::post('categories/select', [UserCategoryController::class, 'selectCategories']);
     Route::get('daily-words', [DailyWordController::class, 'getDailyWords']);
     Route::post('daily-words/answer', [DailyWordController::class, 'answerWord']);
+    Route::post('words/search', [WordSearchController::class, 'search']);
 });
